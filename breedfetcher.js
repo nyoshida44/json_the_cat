@@ -8,7 +8,7 @@ request(`https://api.thecatapi.com/v1/breeds/search?q=${catBreed}`, (error, resp
   if (error) {
     console.log(error);
     return;
-  } 
+  }
   const data = JSON.parse(body);
   if (data.length === 0) {
     console.log("Breed was not found");
